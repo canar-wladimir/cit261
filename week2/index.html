@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather Foot Wear</title>
+    <script>
+      /* Defining Table
+      * Input: User input the weather type
+      * Processing: According to the weather the system will chose the foot Wear 
+      * Output: Foot wear suggested
+      */
+      // Your JavaScript function belongs here.
+      function weather() {
+        var typeWeather = document.getElementById("weath").value;
+        var typeFoot;
+	      if (typeWeather == "hot") {
+		      typeFoot = 	"sandals";
+	      } else if (typeWeather == "rain") {
+		      typeFoot = "galoshes";
+		    } else if (typeWeather == "snow") {
+			    typeFoot = "boots";
+		    } else {  
+			    typeFoot = "shoes";
+			  }	
+        document.getElementById("typeshoes").innerHTML = typeFoot;
+        }
+    </script>
+  </head>
+  <body>
+    <h1>How is the weather today?</h1>
+      Weather <input type="text" id="weath"><br>
+    <button type="button" onclick="weather()">suggested Foot Wear</button><br>
+      Suggested shoes are: <div id="typeshoes"></div>
+  </body>
+</html>

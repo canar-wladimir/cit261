@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+ 	<head>
+  	<meta charset="utf-8">
+  	<title>Code</title>
+
+  	<script>
+			function myTest(){
+				var myArray = new Array(Math.floor(Math.random() * 10));	//random array up to 10 elements (if you like you can increase the value)
+				for (var i = 0; i < myArray.length ; i++) {	//fill array data with random numbers
+					myArray[i] = Math.floor(Math.random() * 10);
+				}	
+				var sumArray = addEnds(myArray);   //call function to get the sum of the first and last value of the array
+				var midArray = getMiddle(myArray); //call function to get the middle element (if the array is even will return the average
+				document.getElementById("array").innerHTML = "This is My Array " + myArray;
+				document.getElementById("sum").innerHTML = "Sum of the first and last values in an array: " + sumArray;
+				document.getElementById("midle").innerHTML = " Middle element in an array (average if this is even):" + midArray;
+			}
+
+			function addEnds(list){
+				/* Defining Table
+				* Input: no input
+				* Processing:  calculate the sum of the first and last values in an array
+				* Output: the sum of the first and last values in an array
+				*/
+				return list[0]+list[list.length-1];
+			}
+	
+			function getMiddle(list) {
+				/* Defining Table
+				* Input: no input
+				* Processing:  if array is even calculate average of the two middle elements of the array, other wise get the middle element of the array
+				* Output: the element or the average of the middle elements in the array
+				*/
+	    	if(list.length%2) {
+					return list[parseInt(list.length/2)];
+				} else {
+					return (list[list.length/2] + list[(list.length/2)-1])/2;
+				}
+			}
+		
+ 		</script>
+ 	</head>
+ 
+	<body>
+		<h1>Code arrays</h1>
+		<button type="button" onclick="myTest()">CheckFuntions</button>
+		<div id="array"></div><br>
+		<div id="sum"></div><br>
+		<div id="midle"></div><br>
+	</body>
+</html>
