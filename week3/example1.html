@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <h1>Test JS Object</h1>
+        <p>Person object</p>
+        <p>properties are name=John, age=31, favColor="green", height:183</p>
+   
+        <script>
+            //example 1
+            //object person
+                var person = {
+                    name: "John", age: 31, 
+                    favColor: "green", height: 183
+                };
+
+                //This example demonstrates how to access the age of our person object.
+                var x = person.age;
+                var y = person['age'];
+
+                document.write("<p>print age demo</p>");
+                document.write(x);
+                document.write("</br>");
+                document.write(y);
+                document.write("</br>");
+
+                document.write("<p>print length of name</p>");
+                //JavaScript's built-in length property is used to count the number of characters in a property or string.
+                document.write(person.name.length);
+            
+        </script>
+    </body>
+</html>

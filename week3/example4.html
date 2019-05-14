@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <h1>Test JS Object Adding Methods</h1>
+       
+        <script>
+         
+            //example2
+            //Creating Objects
+            //Object type:
+            function person(name, age, color) {
+                this.name = name;
+                this.age = age;
+                this.favColor = color;
+                this.changeName = function (name) {
+                    this.name = name;
+                this.yearOfBirth = bornYear;
+                }
+            }
+
+            function bornYear(){
+                return 2019 - this.age;
+            }
+
+            //object constructor
+            var p1 = new person("John", 42, "green");
+            p1.changeName("Pedro");
+            document.write("<p>New person object</p>");
+            document.write("<p>age</p>");    
+            document.write(p1.age); // Outputs 42
+            document.write("<p>name</p>");
+            document.write(p1.name); // Outputs "Pedro"
+            document.write("<p>year of birth</p>");
+            document.write(p1.yearOfBirth()); 
+        </script>
+    </body>
+</html>
