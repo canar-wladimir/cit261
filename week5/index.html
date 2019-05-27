@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>LocalStorage API Example</title>
+        
+        <script>
+          
+            function save(){
+                //check if explore support LocalStorageAPI
+                if(typeof(Storage) !== "undefined"){                    
+                    var nom = document.getElementById("nametxt").value;
+                    var apel = document.getElementById("lastnametxt").value;
+                    //localStorage.setItem("key","value")
+                    localStorage.setItem("Name", nom);
+                    localStorage.setItem("LName", apel);
+                }
+                else {
+                    var message = "Internet Explorer not supported";
+                    document.getElementById("notsupported").innerHTML = message;
+                }
+            }
+
+            function retrive(){
+                var nombre = localStorage.getItem("Name");
+                var apellido = localStorage.getItem("LName");
+                document.getElementById("name").innerHTML = nombre;
+                document.getElementById("lastname").innerHTML = apellido; 
+            }
+
+            function arrayString(){
+                var movie1 = document.getElementById("movie1").value;
+                var movie2 = document.getElementById("movie2").value;
+                var movie3 = document.getElementById("movie3").value;
+
+                //array called movies
+                var movies = [movie1, movie2, movie3];
+                //turned into string array movies and store value
+                if(typeof(Storage) !== "undefined"){ 
+                    localStorage.setItem("myMovies", JSON.stringify(movies));
+                }
+
+            }
+
+            function retivearray(){
+                document.getElementById("mymovies").innerHTML = localStorage.getItem("myMovies");
+            }
+
+            function associativeArrayString(){
+                var address = document.getElementById("address").value;
+                var phone = document.getElementById("phone").value;
+                var city = document.getElementById("city").value;
+
+                //array called movies
+                var myinfo = new Object();
+                myinfo["address"] = address;
+                myinfo["phone"] = phone;
+                myinfo["city"] = city;
+                //turned into string array movies and store value
+                if(typeof(Storage) !== "undefined"){ 
+                    localStorage.setItem("myInfo", JSON.stringify(myinfo));
+                }    
+                console.log(myinfo);
+            }
+
+            function retiveassociativeArray() {
+                document.getElementById("mypersonalinfo").innerHTML = localStorage.getItem("myInfo");
+            }
+
+            function deleteStorage() {
+                localStorage.removeItem('Name');
+                localStorage.removeItem('LName'); 
+            }
+
+        </script>   
+    </head>
+        
+    <body>
+        <h1>Example - localStorage</h1>
+        <p>Store data inside client system</p>
+        <input type="text" placeholder="Name" id="nametxt"><br><br>
+        <input type="text" placeholder="Last Name" id="lastnametxt"><br><br>
+        <p id="notsupported"></p>
+        <button onclick="save()">Save</button><br><hr />
+       
+        Nombre almacenado:
+        <label type="text"id="name"></label><br>                          
+        Apellido almacenado:
+        <label type="text" id="lastname"></label><br>
+        <button onclick="retrive()">retrive data</button><br><hr /> 
+
+        <h2>My Movies - example array localStorage</h2>
+        <input type="text" placeholder="Movie1" id="movie1"><br><br>
+        <input type="text" placeholder="Movie2" id="movie2"><br><br>
+        <input type="text" placeholder="Movie3" id="movie3"><br><br>
+        <p id="notsupported2"></p>
+        <button onclick="arrayString()">Array</button><br><hr />
+        <p>My Movies</p>
+        <button onclick="retivearray()">Retrive array</button><br>
+        <p id="mymovies"></p>
+        <hr />
+
+        <h2>My personal info - associatevie array and objects</h2>
+        <input type="text" placeholder="address" id="address"><br><br>
+        <input type="text" placeholder="phone" id="phone"><br><br>
+        <input type="text" placeholder="city" id="city"><br><br>
+        <p id="notsupported3"></p>
+        <button onclick="associativeArrayString()">Associative Array</button><br><hr />
+        <p>My personal info</p>
+        <button onclick="retiveassociativeArray()">Retrive Associative array</button><br>
+        <p id="mypersonalinfo"></p>
+        <hr />
+        <button onclick="deleteStorage()">Delete LocalStorage</button><br>
+        
+
+
+
+    </body>
+</html>

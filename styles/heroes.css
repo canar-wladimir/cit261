@@ -1,0 +1,41 @@
+* {
+    font-family: 'Pacifico', cursive;
+    margin: 1rem;
+}
+
+header {
+    text-align: center
+}
+
+
+h1 {
+    font-family: 'Kumar One Outline', cursive;
+}
+
+
+h2 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 170%;
+    margin: 0.5rem 0 0.3rem 0;
+    text-align: center
+}
+
+.red {
+    color: red;
+}
+
+p {
+    margin: 0 0 0 1rem;
+}
+
+li {
+    margin: 0 0 0 1rem;
+}
+
+section article {
+    margin-top: 0;
+    width: 30%;
+    float: left;
+    border: 1px solid black;
+
+}

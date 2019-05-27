@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>LocalStorage API Example</title>
+        
+        <script>
+          
+        
+            function retrive(){
+                var nombre = localStorage.getItem("Name");
+                var apellido = localStorage.getItem("LName");
+                document.getElementById("name").innerHTML = nombre;
+                document.getElementById("lastname").innerHTML = apellido; 
+            }
+
+            function retivearray(){
+                document.getElementById("mymovies").innerHTML = localStorage.getItem("myMovies");
+            }
+
+            function retiveassociativeArray() {
+                document.getElementById("mypersonalinfo").innerHTML = localStorage.getItem("myInfo");
+            }
+
+        </script>   
+    </head>
+        
+    <body>
+        <h1>Example - localStorage</h1>
+        <p>Store data inside client system</p>    
+        Nombre almacenado:
+        <label type="text"id="name"></label><br>                          
+        Apellido almacenado:
+        <label type="text" id="lastname"></label><br>
+        <button onclick="retrive()">retrive data</button><br><hr /> 
+
+        <h2>My Movies - example array localStorage</h2>
+        <p id="notsupported2"></p>
+        <p>My Movies</p>
+        <button onclick="retivearray()">Retrive array</button><br>
+        <p id="mymovies"></p>
+        <hr />
+
+        <h2>My personal info - associatevie array and objects</h2>
+        <p id="notsupported3"></p>
+        <p>My personal info</p>
+        <button onclick="retiveassociativeArray()">Retrive Associative array</button><br>
+        <p id="mypersonalinfo"></p>
+        <hr />
+        
+
+
+
+    </body>
+</html>

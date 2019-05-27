@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <h1>JSON stringify</h1>
+       
+        <script>
+         
+            //example2
+            //Creating Objects
+            //Object type:
+            function person(name, age, color) {
+                this.name = name;
+                this.age = age;
+                this.favColor = color;
+            }
+
+            //object constructor
+            var p1 = new person("John", 42, "green");
+            //console p1
+            console.log(p1);
+            document.write(p1.name, " ", p1.age, " ", p1.favColor); 
+
+            document.write("</br>");  
+            //JSON stringify 
+            var jsonToString = JSON.stringify(p1);
+            //console string
+            console.log(jsonToString);
+            document.write(jsonToString); 
+
+            
+            document.write("</br>");
+            //deserialized
+            var p2 = JSON.parse(jsonToString);
+            console.log(p2);
+            document.write(p2.name, " ", p2.age, " ", p2.favColor); 
+
+        </script>
+    </body>
+</html>
