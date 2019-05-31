@@ -20,10 +20,10 @@
             }
 
             function retrive(){
-                var nombre = localStorage.getItem("Name");
-                var apellido = localStorage.getItem("LName");
-                document.getElementById("name").innerHTML = nombre;
-                document.getElementById("lastname").innerHTML = apellido; 
+                var varname = localStorage.getItem("Name");
+                var varlastname = localStorage.getItem("LName");
+                document.getElementById("name").innerHTML = varname;
+                document.getElementById("lastname").innerHTML = varlastname; 
             }
 
             function arrayString(){
@@ -41,7 +41,11 @@
             }
 
             function retivearray(){
-                document.getElementById("mymovies").innerHTML = localStorage.getItem("myMovies");
+                var objectMovies = JSON.parse(localStorage.getItem("myMovies"));
+                document.getElementById("mymovies").innerHTML = objectMovies;
+                console.log(localStorage.getItem("myMovies"));
+                console.log(objectMovies);
+                
             }
 
             function associativeArrayString(){
@@ -67,7 +71,9 @@
 
             function deleteStorage() {
                 localStorage.removeItem('Name');
-                localStorage.removeItem('LName'); 
+                localStorage.removeItem('LName');
+                localStorage.removeItem('myMovies');
+                localStorage.removeItem('myInfo'); 
             }
 
         </script>   
