@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="Wladimir Canar">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Setting CSS Style using JS</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="../css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="../css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="../css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="../css/large.css" rel="stylesheet">
+
+
+<style type="text/css">
+    div#box1,  div#box2 {
+        background: #9DCEFF;
+        width: 400px;
+        height: 200px;
+    }
+    div#box3 {
+        background: #9DCEFF;
+        width: 400px;
+        height: 0px;
+    }
+
+    div#mycont {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: yellow;
+    }
+    div#box4 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: red;
+    }
+
+</style>
+<script>
+    function changebg(el, color){
+       var elem =  document.getElementById(el);
+       elem.style.transition = "background 1.0s linear 0s";
+       elem.style.background = color;     
+    }
+
+    function
+     fadeout(el){
+       var elem =  document.getElementById(el);
+       elem.style.transition = "opacity 1.0s linear 0s";
+       elem.style.opacity = 0;     
+    }
+
+    function fadein(el){
+       var elem =  document.getElementById(el);
+       elem.style.transition = "opacity 1.0s linear 0s";
+       elem.style.opacity = 1;     
+    }
+
+    function slideopen(el){
+       var elem =  document.getElementById(el);
+       elem.style.transition = "height 1.0s linear 0s";
+       elem.style.height = "200px";     
+    }
+
+    function slideclose(el){
+       var elem =  document.getElementById(el);
+       elem.style.transition = "height 1.0s linear 0s";
+       elem.style.height = "0px";     
+    }
+
+    function OnSelectionChange (select, id) {
+        var selectedOption = select.options[select.selectedIndex];
+           
+        if (selectedOption.value == "open") {
+            var elem =  document.getElementById(id);
+            elem.style.transition = "height 1.0s linear 0s";
+            elem.style.height = "200px";
+        }
+        if (selectedOption.value == "close") {
+            var elem =  document.getElementById(id);
+            elem.style.transition = "height 1.0s linear 0s";
+            elem.style.height = "0px";
+        }
+    }
+
+    function myMove(el) {
+        var elem = document.getElementById(el);   
+        var pos = 0;
+        var id = setInterval(frame, 10);
+        
+        function frame() {
+            if (pos == 350) {
+                clearInterval(id);
+            } else {
+            pos++; 
+            elem.style.top = pos + 'px'; 
+            elem.style.left = pos + 'px'; 
+            }
+        }
+    }
+
+</script>
+     
+</head>
+<body id="myBody">
+<!-- HEADER HERE -->
+	<header>
+        <div  class = "box2">
+            <h1>CSS Transition and animation</h1>
+           <p>Test Of Transitions and animations</p>
+        </div>
+    </header>
+
+<!-- NAVIGATION HERE -->
+   
+
+<!-- CONTENT HERE -->
+    <main class = "center">
+        <h1>Transitions examples</h1>
+        <h2>Change color</h2>
+        <p ontouchstart="changebg('box1', '#F0F')">TOUCH HERE TO CHAGE THE COLOR TO MAGENTA</p>
+        <p ontouchend="changebg('box1', '#0C0')">TOUCH and at the end will change the COLOR TO GREEN</p>
+        
+        
+        <button onclick="changebg('box1', '#F0F');">Magenta</button>
+        <button onmouseover="changebg('box1', '#0C0');">Green</button>
+        <button onmouseout="changebg('box1', '#9DCEFF');">Original</button>
+        <div id="box1"></div>
+
+        <h2>FadeIn / Out</h2>
+        <input onkeydown="fadeout('box2');"></input>
+        <button onclick="fadein('box2');">Fade In</button>
+        <div id="box2"></div>
+
+        <h2>SlideOpen / Close</h2>
+        Select an item from the following list:<br />
+        <select onchange="OnSelectionChange (this, 'box3')">
+            <option value="close" />close
+            <option value="open" />open
+        </select>
+
+        <button onclick="slideclose('box3');">Slide Close</button>
+        <button onclick="slideopen('box3');">Slide Open</button>
+        <div id="box3"></div>
+
+        <h2>Animation</h2>
+        <button onclick="myMove('box4');">Animation</button>
+        <div id="mycont">
+        <div id="box4"></div></div>
+
+    </main>
+
+    <section class ="center">
+     
+          
+    </section>
+       
+    
+<!-- FOOTER HERE -->   
+    <footer class = "center1 footer">
+     
+        <div class="footerdiv">
+            <p>Fluency Evidence: CSS3 Transitions, Animations, and Transformations By Wladimir Canar</p>
+        </div>                   
+    </footer>
+    <script src = "../js/hamburger.js"></script>
+   
+    <script>
+        document.getElementById("myBody").onload= function() {myMove('box4')};
+    </script>
+</body>
+</html>
