@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="Wladimir Canar">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>CSS3 Transitions without Custom Libraries</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="../css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="../css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="../css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="../css/large.css" rel="stylesheet">
+
+
+<style type="text/css">
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    body > div > div
+    {
+        width:200px;
+        height:200px;
+        background:#676470;
+        transition: transform 1s;
+        margin: 10%;
+    
+    }
+
+    .scale:hover {
+        transform: scale(2);
+    }
+
+    .rotate:hover {
+        transform: rotate(1080deg);
+    }
+
+    .translate:hover {
+        transform: translate(20px, 20px);
+    }
+
+    .skew:hover {
+        transform: skewX(25deg);
+        transform: skewY(10deg);
+        transform: skew(25deg, 10deg);
+    }
+    .sh:hover {
+        transform: rotate(90deg) scale(2) translateY(-50%) translateX(50%);
+    }
+
+    .icon-arrow-right:before {
+	content: "\f138";
+    }
+
+ 
+
+
+</style>
+<script>
+ 
+
+</script>
+     
+</head>
+<body id="myBody">
+<!-- HEADER HERE -->
+	<header>
+        <div  class = "box2">
+            <h1>Designing, Defining, and Triggering CSS3 Transforms without Custom Libraries</h1>
+
+        </div>
+    </header>
+
+<!-- NAVIGATION HERE -->
+   
+
+<!-- CONTENT HERE -->
+    <div class="container">
+        <div class="scale">
+            <h2>scale demo</h2>
+        </div>
+        <div class="rotate">
+            <h2>rotate demo</h2>
+        </div>
+        <div class="translate">
+                <h2>translate demo</h2>
+        </div>
+        <div class="skew">
+                <h2>skew demo</h2>
+        </div>
+        <div class="sh">
+                <h2>Rotate demo</h2>
+        </div>
+       
+    </div>
+
+  
+
+
+
+
+       
+    
+<!-- FOOTER HERE -->   
+   
+    <script src = "../js/hamburger.js"></script>
+    <script> 
+      
+    </script> 
+</body>
+</html>

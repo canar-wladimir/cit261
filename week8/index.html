@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="Wladimir Canar">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>CSS3 Transitions without Custom Libraries</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="../css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="../css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="../css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="../css/large.css" rel="stylesheet">
+
+
+<style type="text/css">
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    body > div > div
+    {
+        width:240px;
+        height:240px;
+        background:#676470;
+        transition:all 0.3s ease;
+        margin: 10%;
+        
+    }
+    
+    div > h2 {
+        text-align: center;
+        padding: 70px;
+    }
+
+    .fade {opacity: 0.5;}
+
+    .fade:hover {opacity: 1;}
+
+    .color:hover
+    {
+     background:#53a7ea;   
+    }
+
+    .grow:hover
+    {
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+    .shrink:hover
+    {
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    .rotate:hover
+    {
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+    }
+
+    .circle:hover {border-radius:50%;}
+
+    .threed:hover
+    {
+        box-shadow:
+                1px 1px #53a7ea,
+                5px 5px #53a7ea,
+                5px 5px #53a7ea;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+
+  
+
+</style>
+<script>
+ 
+
+</script>
+     
+</head>
+<body id="myBody">
+<!-- HEADER HERE -->
+	<header>
+        <div  class = "box2">
+            <h1>Designing, Defining, and Triggering CSS3 Transitions without Custom Libraries</h1>
+
+        </div>
+    </header>
+
+<!-- NAVIGATION HERE -->
+   
+
+<!-- CONTENT HERE -->
+    <div class="container">
+        <div class="fade">
+            <h2>Fade in demo</h2>
+        </div>
+        <div class="color">
+            <h2>Color demo</h2>
+        </div>
+        <div class="grow">
+                <h2>Grow demo</h2>
+        </div>
+        <div class="shrink">
+                <h2>Shrink demo</h2>
+        </div>
+        <div class="rotate">
+                <h2>Rotate demo</h2>
+        </div>
+        <div class="circle">
+                <h2>Circle demo</h2>
+        </div>
+        <div class="threed">
+                <h2>Shadow demo</h2>
+        </div>
+    </div>
+
+
+
+       
+    
+<!-- FOOTER HERE -->   
+   
+    <script src = "../js/hamburger.js"></script>
+    <script> 
+      
+    </script> 
+</body>
+</html>

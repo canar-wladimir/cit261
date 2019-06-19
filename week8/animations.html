@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="Wladimir Canar">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>CSS3 Transitions without Custom Libraries</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="../css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="../css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="../css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="../css/large.css" rel="stylesheet">
+
+
+<style type="text/css">
+    div { 
+        margin-left: 10%;
+    }
+
+    @keyframes bounceIn {
+        0% {
+            transform: scale(0.1);
+            opacity: 0;
+        }
+        60% {
+            transform: scale(1.2);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .example1 {
+        animation-duration: 2s;
+        animation-name: bounceIn;
+    }
+    /* .example1 { animation: bounceIn 2s;} */
+    .example2 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+    }
+
+/* Standard syntax */
+    @keyframes example {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+    }
+
+    .circle {
+	    border-radius: 50%;
+	    left: calc(50% - 6.25em);
+	    top: calc(50% - 12.5em);
+	    transform-origin: 50% 12.5em;
+	    width: 12.5em;
+	    height: 12.5em;
+	    position: absolute;
+	    box-shadow: 0 1em 2em rgba(0, 0, 0, .5);
+    }
+    .one,
+    .three {
+	    background: rgba(142, 92, 205, .75);
+    }
+    .two,
+    .four {
+	    background: rgba(236, 252, 100, .75);
+    }
+    .one {
+	    transform: rotateZ(0);
+    }   
+
+    .two {
+	    transform: rotateZ(90deg);
+    }
+
+    .three {
+	    transform: rotateZ(180deg);
+    }
+
+    .four {
+	    transform: rotateZ(-90deg);
+    }
+
+    @keyframes spin {
+	    0% {
+		    transform: rotateZ(0);
+	    }
+	    100% {
+		    transform: rotateZ(360deg);
+	    }
+    }
+
+    .container {
+	    animation: spin 10s linear infinite;
+    }
+</style>
+<script>
+ 
+
+</script>
+     
+</head>
+<body id="myBody">
+<!-- HEADER HERE -->
+	<header>
+        <div  class = "box2">
+            <h1>Designing, Defining, and Triggering CSS3 animation without Custom Libraries</h1>
+
+        </div>
+
+        
+
+    </header>
+
+<!-- NAVIGATION HERE -->
+   
+
+<!-- CONTENT HERE -->
+ 
+        <div class="example1">
+            <h1>scale demo</h1>
+        </div>
+        <div class="example2">
+            <h2>example 2</h2>
+        </div>
+        <div class="container">
+            <div class="circle one"></div>
+            <div class="circle two"></div>
+            <div class="circle three"></div>
+            <div class="circle four"></div>
+        </div>
+      
+       
+ 
+
+
+       
+    
+<!-- FOOTER HERE -->   
+   
+    <script src = "../js/hamburger.js"></script>
+    <script> 
+      
+    </script> 
+</body>
+</html>
