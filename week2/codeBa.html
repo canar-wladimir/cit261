@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+ <head>
+  <meta charset="utf-8">
+  <title>Code</title>
+
+  <script>
+	function myTest(){
+		var myArray = new Array(Math.floor(Math.random() * 10));	//random array up to 10 elements (if you like you can increase the value)
+		var mult = 2; //number to multiply the array
+		var j = 0;
+		
+		for (var i = 0; i < myArray.length ; i++) {	//fill array data with random numbers
+			myArray[i] = Math.floor(Math.random() * 10);
+		}
+		var newArray = multiply(myArray, mult);
+
+		for (var i=0 ; i < newArray.length ; i++) {
+			if (newArray[i] < 10){
+				j++;
+			}
+		}
+		document.getElementById("array").innerHTML = "My Original array " + myArray;
+		document.getElementById("times").innerHTML = "Number to multilply the array: " + mult;
+		document.getElementById("narray").innerHTML = "New array: " + newArray;
+		document.getElementById("less").innerHTML = "Number of elements betwen 0 an 10: " + j;
+		
+	}
+
+	function multiply(list, multiplier){
+		/* Defining Table
+		* Input: no input
+		* Processing:  calculate the count of the even numbers
+		* Output: count of even numbers
+		*/
+		var cc = new Array();
+		var j = 1;
+		for (var i=0; i<list.length;i++){
+			cc[i] = multiplier*list[i];
+		}
+		return cc;
+	}
+
+
+ </script>
+ </head>
+ <body>
+	<h1>Times array</h1>
+	<button type="button" onclick="myTest()">CheckFuntions</button>
+	<div id="array"></div><br>
+	<div id="times"></div><br>
+	<div id="narray"></div><br>
+	<div id="less"></div><br>
+</body>
+</html>
