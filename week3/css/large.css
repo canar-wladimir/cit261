@@ -1,0 +1,53 @@
+@media only screen and (min-width: 1028px) {
+
+ header, footer, nav, main {max-width:75rem; margin: auto;}
+ 
+ nav ul {padding-left: 2%;}  
+ nav li {width: auto;}
+ nav a {padding: .5rem 1rem;}
+
+ main figure{width: 31%;}
+
+ div.news{ column-count: 3;}
+
+
+ /*Main tours.html rules here*/
+
+ .tours1 aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin: 15px 10px 15px 0px;
+}
+
+
+.tours1 aside > img{
+    padding: 2px;
+    vertical-align: middle;
+}
+
+ .tours_main {
+     display: grid;
+     grid-template-columns: 1fr 3fr;
+
+ }
+
+ .tours_main > h2{
+    grid-column-start: 1; 
+    grid-column-end: 3;
+
+}
+
+.tours_main > p{
+    grid-column-start: 1; 
+    grid-column-end: 3;
+
+}
+
+.mydiv {
+    grid-column-start: 2; 
+    grid-column-end: 3;
+}
+
+}/* end of media query screen*/

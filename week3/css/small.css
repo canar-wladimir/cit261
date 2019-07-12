@@ -1,0 +1,252 @@
+* {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* bidyt rules here */
+* {text-align: justify}
+
+body {
+    font-family: verdana;
+    font-size: 16px;
+}
+
+/*heder rules here */
+header {
+    background-color:rgb(98,0,0);
+    padding: 1rem 2%;
+}
+header h1 {
+    margin: 0;
+}
+header h2 {
+    margin: 0;
+}
+
+.container_h {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.container_h h1{
+    font-size: 280%;
+    color: white;
+    text-align: center;
+}
+
+
+.container_h_t {
+    display: none;
+}
+
+.container_h_t img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.container_h_t2 {
+    font-size: 1vw;
+    text-align: center;
+    color:white;
+}
+
+/* navigation rules here */
+nav ul.hide {
+    display: none;
+}
+
+button {
+    color:white;
+    background-color: #111;
+    font-size: 180%;
+}
+nav {background-color: #111;}
+
+nav ul {margin:0; padding:0;}
+nav li{list-style-type: none;}
+nav li.active{background-color: #333;}
+nav a {
+    display: block;
+    padding: .8rem 0; 
+    color: #eee;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover{background-color: #444;}
+
+/*----*/
+
+/*Main rules here*/
+
+h1 {margin-bottom: 0.5px;}
+h2 {margin-bottom: 0.5px;}
+p {margin-top: 7px;}
+
+main {
+    padding: 1rem 2%;
+    display: block; 
+}
+.box1 h1 > strong {
+    color: rgb(238, 170, 20);
+}
+
+
+
+
+.margin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+    border-radius: 15px;
+}
+.margin img {
+    max-width: 100%;
+    margin: 0%;
+}
+
+.margin img:hover {box-shadow: 0px 0px 0px 4px rgba(98,0,0,0.3);}
+
+.box2 div * {
+    margin: 4px;
+}
+.box2 div {
+    margin-bottom: 4px;
+}
+.box2 h2{
+    background-color: rgb(238, 170, 20);
+
+}
+
+.box2 div img{
+    margin: 0;
+    border-radius: 0px 15px 0px 15px;
+}
+
+/*Main tours.html rules here*/
+.tours1 h1 > strong {
+    color: rgb(238, 170, 20);
+}
+
+.tours1 img {
+    max-width: 100%;
+    border-radius: 0px 15px 0px 15px;
+}
+
+.tours_main h2 {
+    background-color: rgb(238, 170, 20);
+}
+
+.tours_main h3 {
+    background-color: rgba(238, 170, 20, 0.3);
+    margin-top:15px;
+    margin-bottom:2px;
+    
+}
+
+.tours1 aside {
+    display: none;
+}
+
+ul {
+    margin-left: -30px;
+    margin-top:0;
+    margin-right: 10px;
+    
+}
+
+ul > li {
+    margin-left: 20px;
+    text-align: left;
+
+}
+
+.price {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.price-note {
+    grid-column-start: 1; 
+    grid-column-end: 4;
+}
+
+.note {
+    font-weight: bold;
+}
+
+.note li{
+    font-weight: normal;
+}
+
+
+.note p {
+    margin-bottom: 2px;
+    font-weight: normal;
+}
+
+.divp1 p{
+    text-align: right;
+    margin:0;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.divp2 p{
+    text-align: center;
+    margin:0;
+    font-size: 110%;
+    text-decoration:line-through;
+}
+
+.divp3 p{
+    text-align: left;
+    margin:0;
+    font-size: 120%;
+    color: rgb(98,0,0);
+}
+.divp4 {
+    text-align: center;
+    margin:0;
+    font-size: 150%;
+    color: rgb(98,0,0);
+}
+
+.divp5 {
+    
+    margin:0;
+    font-size: 80%;
+}
+/***/
+
+/*Main services.html rules here*/
+.service_main h2 {
+    background-color: rgb(238, 170, 20);
+}
+
+.service_main h3 {
+    background-color: rgba(238, 170, 20, 0.3);
+    margin-top:15px;
+    margin-bottom:2px;
+    
+}
+
+/****/
+
+
+footer {
+    text-align: center;
+    padding: 1rem 2%;
+    background-color:rgb(98,0,0);
+    color: white;
+}
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
