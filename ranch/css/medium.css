@@ -1,0 +1,98 @@
+@media only screen and (min-width: 560px) {
+
+
+
+
+nav li {float:left; width: 18%;}
+
+nav ul.hide {
+    display: block;
+}
+
+.container_h_t {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+
+button {
+    display: none;
+}
+
+/**Main rules here**/
+main figure{
+    float: right;
+    width: 50%;
+    margin-left: 2%;
+}
+
+.maingrid {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    /*padding-block-end: 0%;*/
+}
+
+.box2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    margin-bottom: 10px;
+
+ 
+}
+
+div.news{
+    clear: both;
+    column-count: 2;
+    column-rule: 1px solid #ddd;
+}
+
+
+/*Main tours.html rules here*/
+.mydiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.mydiv > h3 {
+    grid-column-start: 1; 
+    grid-column-end: 4;
+}
+
+.note {
+    grid-column-start: 1; 
+    grid-column-end: 4;
+}
+.divp1 {
+    margin-top: 20px;
+}
+
+.divp2 {
+    margin-top: 20px; 
+}
+
+.divp3 {
+    margin-top: 20px;
+}
+
+.divp4 {
+    font-size: 170%;
+}
+
+img.fade {opacity: 0.5;}
+img.fade:hover {
+    opacity: 1;
+}
+/*****/
+
+}/* end of media query screen*/

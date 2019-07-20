@@ -1,0 +1,318 @@
+{
+  "tours": [
+    {
+      "toursType": "Our recomendation",
+      "toursDigram": "♥",
+      "description": "3 full days tour. Reserve a tour to see one of the New 7 Wonders of the World! Travel back in the time with the maginc of Tulum and Coba. Discover  an impressive ancient civilization. Swim in centones. Visit Playa del Carmen and Valladolid. Explore your natural side at the Cancun Xcaret Park. Discover the secrets of the underground river.",
+      "fotos": [
+        "recom1.jpg",
+        "recom2.jpg",
+        "recom3.jpg",
+        "recom4.jpg",
+        "recom5.jpg",
+        "recom6.jpg"
+      ],
+      "tours": [
+        {
+          "name": "8x1 - Three days tour",
+          "costa": 172,
+          "costc": 111,
+          "pricesa": 193,
+          "pricesc": 123,
+          "pricea": 253,
+          "pricec": 153,
+          "mainpic": "3days.jpg",
+          "notes": [
+            "3 days tour.",
+            "You will visit 8 places: 1- Tulum ruin. 2- Coba ruin, 3- Palya del Carmen, 4- Cenote near to Coba, 5- Chichen Itza ruin, 6- Valladolid, 7- Cenote near to Chichen. 8- Xcaret Park",
+            "You will start the tour at 7AM until night.",
+            "It would be a good idea to carry some cash. Do not bring heavy backpacks.",
+            "Wear comfortable clothes, shoes, and sunglasses. Wear a cap or a hat and a swimsuit. Remember to use biodegradable sunscreen. Bring a towel.",
+            "If you have any health or physical problem please contact us before you make your reservation so we can provide you with advice on the matter"
+          ],
+          "contains": [
+            "1 Day: Visit Tumlum, Coba ruins. Swin in a cenote and visit Playa del Carmen. Includes buffet (not beverages). 2 Day: Visit Chichen Itza. Swin in a Cenote and visit Valladolid city.Includes buffet (not beverages). 3 Day Visit Xcarte Park (Xcarte Plus). Includes buffete with unlimited beverages. Snorkel equipmnet. Night show.",
+            "All tours has round trip transfer in an air conditioned van or bus from downtown.",
+            "Bilingual tour guide for ruins"
+          ]
+        }
+      ]
+    },
+    {
+      "toursType": "Mayan ruins tours",
+      "toursDigram": "➥",
+      "description": "Reserve a tour to see one of the New 7 Wonders of the World! Travel back in the time with the maginc of Tulum and Coba.  Discover  an impressive ancient civilization with any of our Mayan ruins tours",
+      "fotos": [
+        "ruin1.jpg",
+        "ruin2.jpg",
+        "ruin3.jpg",
+        "ruin4.jpg",
+        "ruin5.jpg",
+        "ruin6.jpg",
+        "ruin7.jpg",
+        "ruin8.jpg",
+        "ruin9.jpg",
+        "ruin10.jpg"
+      ],
+      "tours": [
+        {
+          "name": "Chichen-Itza Standar",
+          "costa": 30,
+          "costc": 30,
+          "pricesa": 40,
+          "pricesc": 35,
+          "pricea": 60,
+          "pricec": 45,
+          "mainpic": "chichen1.jpg",
+          "notes": [
+            "Child rates are valid for 4-to 11-year-olds. If your payment will be with Credit Card a 5% aditional charge will be made.",
+            "You will start the tour at 8AM until 9PM aprox.",
+            "It would be a good idea to carry some cash. Do not bring heavy backpacks.",
+            "Wear comfortable clothes, shoes, and sunglasses. Wear a cap or a hat and a swimsuit. Remember to use biodegradable sunscreen. Bring a towel.",
+            "If you have any health or physical problem please contact us before you make your reservation so we can provide you with advice on the matter"
+          ],
+          "contains": [
+            "Round trip transfer in an air conditioned van or bus from downtown",
+            "Bilingual tour guide",
+            "Express stop at Valladolid",
+            "Entrance fee to Chichen Itza",
+            "Buffet lunch (not beverage)",
+            "Swimming at cenote"
+          ]
+        },
+        {
+          "name": "Chichen-Itza Premium",
+          "costa": 42,
+          "costc": 40,
+          "pricesa": 52,
+          "pricesc": 45,
+          "pricea": 67,
+          "pricec": 55,
+          "mainpic": "chichen1.jpg",
+          "notes": [
+            "Child rates are valid for 4-to 11-year-olds. If your payment will be with Credit Card a 5% aditional charge will be made.",
+            "You will start the tour at 7AM until 9PM aprox.",
+            "It would be a good idea to carry some cash. Do not bring heavy backpacks.",
+            "Wear comfortable clothes, shoes, and sunglasses. Wear a cap or a hat and a swimsuit. Remember to use biodegradable sunscreen. Bring a towel.",
+            "If you have any health or physical problem please contact us before you make your reservation so we can provide you with advice on the matter"
+          ],
+          "contains": [
+            "Round trip transfer in an air conditioned van or bus from downtown",
+            "Bilingual tour guide",
+            "Express stop at Valladolid",
+            "Entrance fee to Chichen Itza",
+            "Buffet lunch not beverage",
+            "Swimming at cenote",
+            "Tamascal"
+          ]
+        },
+        {
+          "name": "4x1 Prime Class",
+          "costa": 30,
+          "costc": 28,
+          "pricesa": 40,
+          "pricesc": 33,
+          "pricea": 55,
+          "pricec": 40,
+          "mainpic": "4x1.jpg",
+          "notes": [
+            "Child rates are valid for 4-to 11-year-olds. If your payment will be with Credit Card a 5% aditional charge will be made.",
+            "You will start the tour at 7AM until 9PM aprox.",
+            "It would be a good idea to carry some cash. Do not bring heavy backpacks.",
+            "Wear comfortable clothes, shoes, and sunglasses. Wear a cap or a hat and a swimsuit. Remember to use biodegradable sunscreen. Bring a towel.",
+            "If you have any health or physical problem please contact us before you make your reservation so we can provide you with advice on the matter"
+          ],
+          "contains": [
+            "Round trip transfer in an air conditioned van or bus from downtown",
+            "Bilingual tour guide",
+            "Guide tour at both archaeological sites",
+            "Entrance fee to Tulum and Coba",
+            "Lunch",
+            "Swimming at cenote",
+            "free time in Playa del Carmen"
+          ]
+        },
+        {
+          "name": "Coba Cenote Aldea Maya",
+          "costa": 35,
+          "costc": 35,
+          "pricesa": 45,
+          "pricesc": 40,
+          "pricea": 55,
+          "pricec": 45,
+          "mainpic": "coba.jpg",
+          "notes": [
+            "Child rates are valid for 4-to 11-year-olds. If your payment will be with Credit Card a 5% aditional charge will be made.",
+            "You will start the tour at 7AM until 9PM aprox.",
+            "It would be a good idea to carry some cash. Do not bring heavy backpacks.",
+            "Wear comfortable clothes, shoes, and sunglasses. Wear a cap or a hat and a swimsuit. Remember to use biodegradable sunscreen. Bring a towel.",
+            "If you have any health or physical problem please contact us before you make your reservation so we can provide you with advice on the matter"
+          ],
+          "contains": [
+            "Round trip transfer in an air conditioned van or bus from downtown",
+            "Bilingual tour guide",
+            "Entrance fee to Coba",
+            "Buffet (no drinks)",
+            "Swimming at cenote"
+          ]
+        }
+      ]
+    },
+    {
+      "toursType": "Xcaret Group",
+      "toursDigram": "➥",
+      "description": "Explore your natural side at the Cancun theme Parks from Experiencias Xcaret: Xel Ha, Xplor, Xenses, and of course, Xcaret Park. Discover the secrets of the underground river at Rio Secreto, the reef at Garrafon Park Isla Mujeres or all the attractions at Ventura Park. Experience unforgettable adventures at the best Cancun theme parks!",
+      "fotos": [
+        "x1.jpg",
+        "x2.jpg",
+        "x3.jpg",
+        "x4.jpg",
+        "x5.jpg",
+        "x6.jpg",
+        "x7.jpg",
+        "x8.jpg",
+        "x9.jpg",
+        "x10.jpg"
+      ],
+      "tours": [
+        {
+          "name": "Xcaret - Plus",
+          "costa": 114,
+          "costc": 57,
+          "pricesa": 127,
+          "pricesc": 63,
+          "pricea": 140,
+          "pricec": 70,
+          "mainpic": "xcaret1.jpg",
+          "notes": [
+            "Children under 40' tall enter free. Children between 40' to 55' tall pay children rate. If your payment will be with Credit Card a 5% aditional charge will be made.",
+            "You will start the tour at 7AM until 10PM aprox.",
+            "Bring an extra set of clothes.",
+            "Your sunscreen lotion must be free of chemicals to be used in Xcaret.",
+            "Bring some cash and a credit or debit card since the use of certain equipment requires a deposit or to pay for any other service not mentioned on the inclusions list",
+            "If you have any health or physical problem please contact us before you make your reservation so we can provide you with advice on the matter"
+          ],
+          "contains": [
+            "Round trip transfer in an air conditioned van or bus from downtown",
+            "Xcaret Plus access to the park",
+            "Use of snorkeling equipment and lockers.",
+            "Buffet lunch including 1 beer and unlimited beverages (soft drinks, water, and coffee) at lunch time.",
+            "Shows, exhibitions and cultural activities.",
+            "Access to beaches, bays and natural pools",
+            "Life jackets and inner tubes, lounge chairs, hammocks and rest areas",
+            "Show Xcaret Mexico Espectacular, a musical journey through the history of Mexico"
+          ]
+        },
+        {
+          "name": "Xelha",
+          "costa": 90,
+          "costc": 45,
+          "pricesa": 100,
+          "pricesc": 50,
+          "pricea": 110,
+          "pricec": 55,
+          "mainpic": "xelha.jpg",
+          "notes": [
+            "Kids up to 59 cm tall or under 4 years old enter free. Children taller than 1.40 m but under 12 years old must present a valid ID with photo to verify their age. If your payment will be with Credit Card a 5% aditional charge will be made.",
+            "The minimum age for certain activities is 6.",
+            "It would be a good idea to carry some cash. Do not bring heavy backpacks.",
+            "Wear comfortable clothes, shoes, and sunglasses. Wear a cap or a hat and a swimsuit. Remember to use biodegradable sunscreen. Bring a towel.",
+            "Your sunscreen lotion must be free of chemicals to be used in Xel Ha.",
+            "If you have any health or physical problem please contact us before you make your reservation so we can provide you with advice on the matter"
+          ],
+          "contains": [
+            "Round trip transfer in an air conditioned van or bus from downtown",
+            "Entrance to Xel Ha Park ",
+            "More than 20 activities and attractions at the park",
+            "Nutritious breakfast (Regular and whole-wheat hot cakes, fruit, yogurt and fruit juices)",
+            "Snacks buffet (starting at 11:30 am)",
+            "Traditional Mexican and international buffet lunch",
+            "Open bar with domestic liquors and beer",
+            "Unlimited beverages (soft drinks, juices, water)",
+            "Use of snorkeling gear (requires a $25 USD refundable deposit per person)",
+            "Use of a locker and a towel"
+          ]
+        },
+        {
+          "name": "Xplore day",
+          "costa": 112,
+          "costc": 56,
+          "pricesa": 122,
+          "pricesc": 61,
+          "pricea": 130,
+          "pricec": 65,
+          "mainpic": "xplore.jpg",
+          "notes": [
+            "Children must be at least 5 to enter the park. Children between 5 and 11 years old pay half price If your payment will be with Credit Card a 5% aditional charge will be made.",
+            "You will start the tour at 7AM until 9PM aprox.",
+            "You must show an official ID at the park's ticket office (adults and children, too)",
+            "Wear comfortable beachwear, water shoes, and a swimming suit. Bring a towel",
+            "If you have any health or physical problem please contact us before you make your reservation so we can provide you with advice on the matter",
+            "Your sunscreen and/or insect repellent should be 100% biodegradable for you to use it at the park. "
+          ],
+          "contains": [
+            "Round trip transfer in an air conditioned van or bus from downtown",
+            "Two circuits in an underground river to paddle on rafts",
+            "14 zip-linesTravel along 6.2 miles through two circuits with amphibious vehicles. Swim along 430 yards along the stalactite river. ",
+            "Unlimited buffet. Unlimited snacks & beverages (chocolate and multi-flavored water).",
+            "Equipment:Zip-lines: helmet and harness. Amphibious Vehicles: helmet and vehicle for two. Stalactite River Swim: helmet and life jacket. Rafts: helmet and paddles",
+            "Locker for twoResting areas, dressing rooms and bathrooms."
+          ]
+        },
+        {
+          "name": "Xplore Fuego",
+          "costa": 98,
+          "costc": 49,
+          "pricesa": 108,
+          "pricesc": 54,
+          "pricea": 120,
+          "pricec": 60,
+          "mainpic": "xploref.jpg",
+          "notes": [
+            "Children must be at least 5 to enter the park. Children between 5 and 11 years old pay half price If your payment will be with Credit Card a 5% aditional charge will be made.",
+            "You must show an official ID at the park's ticket office (adults and children, too)",
+            "Wear comfortable beachwear, water shoes, and a swimming suit. Bring a towel",
+            "If you have any health or physical problem please contact us before you make your reservation so we can provide you with advice on the matter",
+            "Your sunscreen and/or insect repellent should be 100% biodegradable for you to use it at the park. "
+          ],
+          "contains": [
+            "Round trip transfer in an air conditioned van or bus from downtown",
+            "Two circuits in an underground river to paddle on rafts",
+            "14 zip-linesTravel along 6.2 miles through two circuits with amphibious vehicles. Swim along 430 yards along the stalactite river. ",
+            "Unlimited buffet. Unlimited snacks & beverages (chocolate and multi-flavored water).",
+            "Equipment:Zip-lines: helmet and harness. Amphibious Vehicles: helmet and vehicle for two. Stalactite River Swim: helmet and life jacket. Rafts: helmet and paddles",
+            "Locker for twoResting areas, dressing rooms and bathrooms."
+          ]
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "serviceType": "Transportation",
+      "serviceDigram": "➥",
+      "description": "Do you need your transfer from Cancun airport? We can reserve transportation a company with more than 10 years of experience, highly qualified personnel offers a reliable and personalized transportation service. Let us offer you a quality service and excellence in the destination. Or if you need to move around the city, use our system to request a taxi.  ",
+      "service": [
+        {
+          "name": "Shuttle from airport",
+          "price": 35,
+          "mainpic": "sguttle.jpg",
+          "notes": [
+            "Private transfer Vans are air conditioned, licensed and insured. Your driver will give you all the necessary information.",
+            "We will have a representative waiting for you with a sign with your name after customs, inside the airport at arrivals.",
+            "Up to 5 passanger"
+          ]
+        },
+        {
+          "name": "Radio Taxi",
+          "price": "NA",
+          "mainpic": "taxi.jpg",
+          "notes": [
+            "For this service you are requiered to have whatsapp application.",
+            "Click on the taxi image you will be redirected to a whatsapp message to TAXI company. "
+          ]
+        }
+      ]
+    }
+  ]
+}
